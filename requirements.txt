@@ -1,2 +1,4 @@
-paho-mqtt>=2.0, <3
+paho-mqtt>=2.0,<3
 PyMySQL
+gspread
+python-dotenv
