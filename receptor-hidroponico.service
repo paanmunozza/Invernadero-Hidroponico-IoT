@@ -1,0 +1,14 @@
+[Unit]
+Description=Receptor MQTT del proyecto hidroponico
+After=network.target mosquitto.service mariadb.service
+Wants=mosquitto.service mariadb.service
+
+[Service]
+Type=simple
+User=USUARIO
+ExecStart=/home/USUARIO/hidroponico/iniciar_receptor.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
