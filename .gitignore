@@ -1,0 +1,6 @@
+.env
+credenciales.json
+*.json
+venv/
+__pycache__/
+arduino_secrets.h
